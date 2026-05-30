@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <script>
-  (function() {
-    // Проверяем, есть ли параметр перенаправления в URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const redirectPath = urlParams.get('redirect');
-    if (redirectPath) {
-      // Если есть, заменяем текущую историю на правильный путь и перезагружаем страницу
-      window.history.replaceState(null, '', redirectPath);
-      // Перезагружаем страницу, чтобы React Router запустился с правильным адресом
-      window.location.reload();
-    }
-  })();
-</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
@@ -42,6 +29,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="assets/index-BQ8vT9kl.js"></script>
     <link rel="stylesheet" crossorigin href="assets/index-hjs_Nuk6.css">
+    <script>
+  (function() {
+    // Проверяем, есть ли параметр перенаправления в URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirectPath = urlParams.get('redirect');
+    if (redirectPath) {
+      // Если есть, "затираем" текущий URL в истории браузера на правильный адрес
+      window.history.replaceState(null, '', redirectPath);
+      // Перезагружаем страницу с новым, чистым адресом
+      window.location.reload();
+    }
+  })();
+</script>
   </head>
   <body>
     <div id="root"></div>
