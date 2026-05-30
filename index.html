@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <script>
+  (function() {
+    // Проверяем, есть ли параметр перенаправления в URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirectPath = urlParams.get('redirect');
+    if (redirectPath) {
+      // Если есть, заменяем текущую историю на правильный путь и перезагружаем страницу
+      window.history.replaceState(null, '', redirectPath);
+      // Перезагружаем страницу, чтобы React Router запустился с правильным адресом
+      window.location.reload();
+    }
+  })();
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
