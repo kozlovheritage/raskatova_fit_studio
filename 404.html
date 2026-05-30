@@ -6,7 +6,7 @@
     <script>
       // Сохраняем путь, по которому пытались перейти
       const path = window.location.pathname;
-      // Перенаправляем на главную страницу с нужным путём
+      // Перенаправляем на главную страницу, передавая путь в параметре `redirect`
       window.location.replace(`/?redirect=${encodeURIComponent(path)}`);
     </script>
   </head>
