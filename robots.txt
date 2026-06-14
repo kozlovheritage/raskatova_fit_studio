@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raskatovafitstudio.ru/sitemap.xml
