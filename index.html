@@ -6,13 +6,20 @@
 
     <!-- ─── Primary SEO ─── -->
     <title>РАСКАТОВА Фит-Студия — фитнес в Коломне | Персональные тренировки</title>
-    <meta name="description" content="Бутик-фит-студия Арины Раскатовой в Коломне. Персональные и групповые тренировки: силовой тренинг, растяжка, ягодичный марафон, стрип-пластика. Мини-группы до 4 человек. 16 лет опыта. Записаться онлайн." />
-    <meta name="keywords" content="фитнес Коломна, тренировки Коломна, фит-студия Коломна, персональный тренер Коломна, групповые тренировки Коломна, Раскатова фит-студия, ягодичный марафон, растяжка Коломна, силовой тренинг Коломна, стрип-пластика Коломна" />
+    <meta name="description" content="Бутик-фит-студия Арины Раскатовой в Коломне. Персональные и групповые тренировки: силовой тренинг, растяжка, ягодичный марафон, стрип-пластика. Мини-группы до 4 человек. 16 лет опыта. Записаться: +7 (968) 945-36-12." />
+    <meta name="keywords" content="фитнес Коломна, тренировки Коломна, фит-студия Коломна, персональный тренер Коломна, групповые тренировки Коломна, Раскатова фит-студия, ягодичный марафон Коломна, растяжка Коломна, силовой тренинг, стрип-пластика Коломна, фитнес для женщин Коломна" />
     <meta name="author" content="Арина Раскатова" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://raskatovafitstudio.ru/" />
 
-    <!-- ─── Open Graph (соцсети, мессенджеры) ─── -->
+    <!-- ─── Favicon (Яндекс читает favicon.ico) ─── -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- ─── Open Graph ─── -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://raskatovafitstudio.ru/" />
     <meta property="og:title" content="РАСКАТОВА Фит-Студия — фитнес в Коломне" />
@@ -31,32 +38,39 @@
     <meta name="twitter:description" content="Бутик-фит-студия в Коломне. Мини-группы до 4 человек, 8+ направлений, 16 лет опыта тренера." />
     <meta name="twitter:image" content="https://raskatovafitstudio.ru/opengraph.jpg" />
 
-    <!-- ─── Icons ─── -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
-
     <!-- ─── Fonts ─── -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- ─── JSON-LD: LocalBusiness (Google Business / Яндекс) ─── -->
+    <!-- ─── JSON-LD: LocalBusiness / HealthClub ─── -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "HealthClub",
+      "@type": ["HealthClub", "LocalBusiness"],
       "name": "РАСКАТОВА Фит-Студия",
-      "alternateName": "Raskatova Fit Studio",
-      "description": "Бутик-фит-студия Арины Раскатовой в Коломне. Персональные и групповые тренировки: силовой тренинг, растяжка, ягодичный марафон, стрип-пластика. Мини-группы до 4 человек.",
+      "alternateName": ["Raskatova Fit Studio", "Раскатова фит-студия Коломна"],
+      "description": "Бутик-фит-студия Арины Раскатовой в Коломне. Персональные и групповые тренировки: силовой тренинг, растяжка, ягодичный марафон, стрип-пластика. Мини-группы до 4 человек. 16 лет опыта тренера.",
       "url": "https://raskatovafitstudio.ru/",
-      "logo": "https://raskatovafitstudio.ru/favicon.svg",
-      "image": "https://raskatovafitstudio.ru/opengraph.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://raskatovafitstudio.ru/favicon-32x32.png",
+        "width": 32,
+        "height": 32
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://raskatovafitstudio.ru/opengraph.jpg",
+        "width": 1200,
+        "height": 630
+      },
       "telephone": "+79689453612",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "ул. Девичье поле, д. 4А",
         "addressLocality": "Коломна",
         "addressRegion": "Московская область",
+        "postalCode": "140400",
         "addressCountry": "RU"
       },
       "geo": {
@@ -66,7 +80,7 @@
       },
       "priceRange": "₽₽",
       "currenciesAccepted": "RUB",
-      "paymentAccepted": "Наличные, Карта",
+      "paymentAccepted": "Наличные, Банковская карта",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -83,14 +97,14 @@
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Тренировки",
+        "name": "Тренировки и услуги",
         "itemListElement": [
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
               "name": "Индивидуальная тренировка",
-              "description": "Персональная тренировка один на один с тренером, 60 минут"
+              "description": "Персональная тренировка один на один с тренером, 60 минут, программа под ваши цели"
             },
             "price": "900",
             "priceCurrency": "RUB"
@@ -99,8 +113,8 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Смарт-группа",
-              "description": "Тренировка в группе 2–3 человека с индивидуальной программой"
+              "name": "Смарт-группа (2–3 человека)",
+              "description": "Тренировка в мини-группе с подругами, у каждой своя программа"
             },
             "price": "800",
             "priceCurrency": "RUB"
@@ -109,11 +123,29 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Марафон Бразильские ягодицы",
-              "description": "Авторская программа на 1 месяц, 8 тренировок"
+              "name": "Марафон «Бразильские ягодицы»",
+              "description": "Авторская программа на 1 месяц: 8 тренировок, гайд по питанию, до 4 участников"
             },
             "price": "3290",
             "priceCurrency": "RUB"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Марафон «Жиросжигание»",
+              "description": "Программа на 1 месяц: 8 тренировок, прицельная работа с проблемными зонами"
+            },
+            "price": "3290",
+            "priceCurrency": "RUB"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Массаж",
+              "description": "Расслабляющий и восстановительный массаж"
+            }
           }
         ]
       },
@@ -123,15 +155,21 @@
         "jobTitle": "Фитнес-тренер",
         "description": "Лицензированный тренер 11 направлений, 16 лет опыта в фитнесе"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Коломна"
-      },
-      "sameAs": []
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Коломна"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Московская область"
+        }
+      ],
+      "knowsAbout": ["силовой тренинг", "функциональный тренинг", "растяжка", "стрип-пластика", "йога", "ягодичный марафон", "жиросжигание", "здоровая спина", "массаж"]
     }
     </script>
 
-    <!-- ─── JSON-LD: FAQPage (голосовой поиск, расширенные сниппеты) ─── -->
+    <!-- ─── JSON-LD: FAQPage (расширенные сниппеты в Яндексе и Google) ─── -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -147,34 +185,42 @@
         },
         {
           "@type": "Question",
-          "name": "Сколько стоит персональная тренировка в РАСКАТОВА фит-студии?",
+          "name": "Сколько стоит персональная тренировка в Коломне в РАСКАТОВА фит-студии?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Индивидуальная тренировка — 900 рублей за занятие (60 минут). Смарт-группа (2–3 человека) — 800 рублей. Марафон «Бразильские ягодицы» — 3 290 рублей в месяц."
+            "text": "Индивидуальная тренировка — 900 рублей за занятие (60 минут). Смарт-группа (2–3 человека) — 800 рублей с человека. Марафон «Бразильские ягодицы» или «Жиросжигание» — 3 290 рублей в месяц (8 тренировок)."
           }
         },
         {
           "@type": "Question",
-          "name": "Какие направления тренировок есть в студии?",
+          "name": "Какие направления тренировок есть в РАСКАТОВА фит-студии?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "В студии доступны 8+ направлений: силовой тренинг, функциональный тренинг, жиросжигающие тренировки, растяжка, здоровая спина, степ + сила, бразильские ягодицы, стрип-пластика и массаж."
+            "text": "В студии 8+ направлений: силовой тренинг, функциональный тренинг, жиросжигающие тренировки, растяжка, здоровая спина, степ + сила, бразильские ягодицы, стрип-пластика и массаж."
           }
         },
         {
           "@type": "Question",
-          "name": "Сколько человек в группе?",
+          "name": "Сколько человек в группе на тренировках?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Максимум 4 человека в мини-группе. Это гарантирует личное внимание тренера каждому участнику."
+            "text": "Максимум 4 человека в мини-группе. Смарт-группы — 2–3 человека. Это гарантирует личное внимание тренера каждому участнику."
           }
         },
         {
           "@type": "Question",
-          "name": "Можно ли заниматься, если давно не было тренировок?",
+          "name": "Можно ли заниматься в студии, если давно не было тренировок или есть проблемы со здоровьем?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Да, студия специализируется на комфортном старте. Программа составляется индивидуально с учётом вашего состояния. Никаких жёстких тренировок «до потери пульса»."
+            "text": "Да, студия специализируется на комфортном старте. Программа составляется индивидуально с учётом вашего состояния, здоровья и уровня подготовки. Никаких жёстких тренировок «до потери пульса»."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как записаться на тренировку в РАСКАТОВА фит-студии?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Запишитесь онлайн через форму на сайте raskatovafitstudio.ru или позвоните по номеру +7 (968) 945-36-12. Студия находится в Коломне, ул. Девичье поле, д. 4А."
           }
         }
       ]
